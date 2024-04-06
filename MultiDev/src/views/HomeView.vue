@@ -1,5 +1,9 @@
+<script setup>
+import Main from '../components/home/Main.vue'
+</script>
+
 <template>
-  <div>
-    
-  </div>
+ <div class="bg-[#FAFAFA]">
+  <Main/>
+ </div>
 </template>
