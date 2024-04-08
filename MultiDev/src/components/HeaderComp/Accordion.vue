@@ -1,26 +1,30 @@
-
 <script setup>
 import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'
 import useHeader from "../../composable/useHeader";
 
 onMounted(() => {
-  const button = document.querySelector('#accordion-collapse-body-1');
-  const image = button.querySelector('img');
 
-  function rotateImage(expanded) {
-    if (expanded === "true") {
-      image.style.transform = "rotate(0deg)";
-    } else {
-      image.style.transform = "rotate(90deg) ";
+  const buttons = document.querySelectorAll('[data-accordion-target]');
+
+  buttons.forEach(button => {
+    const image = button.querySelector('img');
+    const text = button.querySelector('span');
+
+    function rotateImage(expanded) {
+      if (expanded === "true") {
+        image.style.transform = "rotate(0deg) ";
+        text.style.color = "black"; 
+      } else {
+        image.style.transform = "rotate(90deg) ";
+        text.style.color = "#F23A3A"; 
+      }
     }
-  }
 
-
-
-  button.addEventListener('click', function() {
-    const expanded = button.getAttribute('aria-expanded');
-    rotateImage(expanded);
+    button.addEventListener('click', function() {
+      const expanded = button.getAttribute('aria-expanded');
+      rotateImage(expanded);
+    });
   });
 });
 
@@ -30,6 +34,8 @@ onMounted(() => {
     initFlowbite();
 })
 </script>
+
+
 <template>
 
 <div id="accordion-collapse" data-accordion="collapse">
@@ -44,13 +50,13 @@ onMounted(() => {
       <p class="mb-2 text-xs flex gap-2 font-medium	"><img src="../../assets/icons/react.svg" alt="">{{ HeaderInfo[0].FrontEnd[0].title }}</p>
       <p class="mb-2 text-xs flex gap-2 font-medium	"><img src="../../assets/icons/angular.svg" alt="">{{ HeaderInfo[0].FrontEnd[0].title1 }}</p>
       <p class="mb-2 text-xs flex gap-2 font-medium	"><img src="../../assets/icons/vue.svg" alt="">{{ HeaderInfo[0].FrontEnd[0].title2 }}</p>
-      <p class="mb-2 text-xs  text-[#F23A3A]">See All</p>
+      <a href="#"> <p class="mb-2 text-xs  text-[#F23A3A]">See All</p> </a>
     </div>
   </div>
   <h2 id="accordion-collapse-heading-2">
     <button type="button" class="flex items-center  black pb-2 mybg w-full p-5 pt-3 pl-0 font-medium rtl:text-right  gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
       <span>Back-End Development</span>
-      <img  src="../../assets/icons/Vector.svg" class="w-3 h-3 shrink-0 gg rorate-0 "  alt="">
+      <img  src="../../assets/icons/Vector.svg" class="w-3 h-3  shrink-0 gg rorate-0 "  alt="">
     </button>
   </h2>
   <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
@@ -59,7 +65,7 @@ onMounted(() => {
       <p class="mb-2 text-xs flex gap-2 font-medium	"><img src="../../assets/icons/laravel.svg" alt="">{{ HeaderInfo[0].BackEnd[0].title1 }}</p>
       <p class="mb-2 text-xs flex gap-2 font-medium	"><img src="../../assets/icons/django.svg" alt="">{{ HeaderInfo[0].BackEnd[0].title2 }}</p>
       <p class="mb-2 text-xs flex gap-2 font-medium	"><img src="../../assets/icons/express.svg" alt="">{{ HeaderInfo[0].BackEnd[0].title3 }}</p>
-      <p class="mb-2 text-xs  text-[#F23A3A]">See All</p>
+      <a href="#"> <p class="mb-2 text-xs  text-[#F23A3A]">See All</p> </a>
     </div>
   </div>
   <h2 id="accordion-collapse-heading-3">
