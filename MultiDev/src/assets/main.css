@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+data-accordion-icon {
+    transform: rotate(90deg) !important;
+}
