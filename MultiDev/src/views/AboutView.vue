@@ -1,7 +1,9 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <mainLayout>
+    <div class="about">
+      <h1>This is an about page</h1>
+    </div>
+  </mainLayout>
 </template>
 
 <style>
@@ -13,3 +15,7 @@
   }
 }
 </style>
+
+<script setup> 
+import mainLayout from '../Layouts/mainLayout.vue';
+</script>
