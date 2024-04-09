@@ -8,15 +8,17 @@ onMounted(() => {
   const buttons = document.querySelectorAll('[data-accordion-target]');
 
   buttons.forEach(button => {
-    const image = button.querySelector('img');
+    const image = button.querySelector('svg');
     const text = button.querySelector('span');
 
     function rotateImage(expanded) {
       if (expanded === "true") {
-        image.style.transform = "rotate(0deg) ";
+        image.style.transform = "rotate(90deg) ";
+        image.style.color = "black",
         text.style.color = "black"; 
       } else {
-        image.style.transform = "rotate(90deg) ";
+        image.style.transform = "rotate(180deg) ";
+        image.style.color = "#F23A3A",
         text.style.color = "#F23A3A"; 
       }
     }
@@ -38,11 +40,13 @@ onMounted(() => {
 
 <template>
 
-<div id="accordion-collapse" data-accordion="collapse">
+<div id="accordion-open" data-accordion="open">
   <h2 id="accordion-collapse-heading-1">
     <button type="button" class="flex items-center black mybg w-full p-5 pl-0 pb-2 font-medium rtl:text-right gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1">
   <span>Front-End Development</span>
-  <img  src="../../assets/icons/Vector.svg" class="w-3 h-3 shrink-0 rorate-0 "  alt="">
+  <svg  class="w-3 h-3 rotate-90 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+      </svg>
 </button>
   </h2>
   <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
@@ -56,7 +60,9 @@ onMounted(() => {
   <h2 id="accordion-collapse-heading-2">
     <button type="button" class="flex items-center  black pb-2 mybg w-full p-5 pt-3 pl-0 font-medium rtl:text-right  gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
       <span>Back-End Development</span>
-      <img  src="../../assets/icons/Vector.svg" class="w-3 h-3  shrink-0 gg rorate-0 "  alt="">
+      <svg  class="w-3 h-3 rotate-90 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+      </svg>
     </button>
   </h2>
   <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
@@ -71,7 +77,9 @@ onMounted(() => {
   <h2 id="accordion-collapse-heading-3">
     <button type="button" class="flex items-center  black mybg pb-2 w-full p-5 pt-3 pl-0 font-medium rtl:text-right  gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
       <span>Design</span>
-      <img  src="../../assets/icons/Vector.svg" class="w-3 h-3 shrink-0 gg rorate-0 "  alt="">
+  <svg  class="w-3 h-3 rotate-90 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+      </svg>
     </button>
   </h2>
   <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
@@ -83,7 +91,9 @@ onMounted(() => {
   <h2 id="accordion-collapse-heading-4">
     <button type="button" class="flex items-center  black mybg pb-2 w-full p-5 pt-3 pl-0 font-medium rtl:text-right  gap-3" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4">
       <span>Mobile Developmen</span>
-      <img  src="../../assets/icons/Vector.svg" class="w-3 h-3 shrink-0 gg rorate-0 "  alt="">
+  <svg  class="w-3 h-3 rotate-90 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+      </svg>
     </button>
   </h2>
   <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-3">
@@ -95,7 +105,9 @@ onMounted(() => {
   <h2 id="accordion-collapse-heading-5">
     <button type="button" class="flex items-center  black mybg pb-2 w-full p-5 pt-3 pl-0 font-medium rtl:text-right  gap-3" data-accordion-target="#accordion-collapse-body-5" aria-expanded="false" aria-controls="accordion-collapse-body-5">
       <span>DevOps</span>
-      <img  src="../../assets/icons/Vector.svg" class="w-3 h-3 shrink-0 gg rorate-0 "  alt="">
+  <svg  class="w-3 h-3 rotate-90 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+      </svg>
     </button>
   </h2>
   <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-3">
@@ -106,7 +118,9 @@ onMounted(() => {
   <h2 id="accordion-collapse-heading-6">
     <button type="button" class="flex items-center  black mybg pb-2 w-full p-5 pt-3 pl-0 font-medium rtl:text-right  gap-3" data-accordion-target="#accordion-collapse-body-6" aria-expanded="false" aria-controls="accordion-collapse-body-6">
       <span>Cloud Computing</span>
-      <img  src="../../assets/icons/Vector.svg" class="w-3 h-3 shrink-0 gg rorate-0 "  alt="">
+  <svg  class="w-3 h-3 rotate-90 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+      </svg>
     </button>
   </h2>
   <div id="accordion-collapse-body-6" class="hidden" aria-labelledby="accordion-collapse-heading-3">
