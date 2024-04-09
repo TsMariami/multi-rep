@@ -17,5 +17,5 @@
 </style>
 
 <script setup> 
-import mainLayout from '../Layouts/mainLayout.vue';
+import mainLayout from '../../Layouts/mainLayout.vue';
 </script>
