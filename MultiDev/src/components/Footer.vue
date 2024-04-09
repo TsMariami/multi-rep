@@ -1,4 +1,9 @@
-<script setup></script>
+<script setup>
+import useFooter from "../composable/useFooter";
+
+
+const { useFooteInfo } = useFooter();
+</script>
 
 <template>
   <div class=" border bg-black mt-32 mx-auto"></div>
@@ -9,14 +14,14 @@
     </router-link>
     </div>
     <div class="flex flex-col gap-10">
-      <h2 class="text-4xl font-medium">Discover Multidev</h2>
+     <h2 class="text-4xl font-medium" v-text="useFooteInfo[0].Description[0].title" />
       <div class="flex flex-col gap-20">
         <div class="flex flex-col gap-4">
           <router-link to="/">
-          <p class="text-2xl font-normal">Services</p>
+          <p class="text-2xl font-normal" v-text="useFooteInfo[0].Description[0].title1" />
         </router-link>
         <router-link to="/about">
-          <p class="text-2xl font-normal">About Us</p>
+          <p class="text-2xl font-normal" v-text="useFooteInfo[0].Description[0].title2" />
         </router-link>
         </div>
         <p class="text-base font-normal">
