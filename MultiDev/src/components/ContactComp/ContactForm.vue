@@ -14,7 +14,7 @@ import LeftSide from '../../components/ContactComp/LeftSide.vue'
             Let’s <span class="text-[#F23A3A]">discuss</span> your project
           </h2>
           <input
-            class="w-[90%] md:w-[70%] md:h-[56x] border-[0px] border-b-[1px] border-[#49454F] focus:ring-0 focus:border-[#49454F]"
+            class="w-[90%] md:w-[70%] md:h-[56px] border-[0px] border-b-[1px] border-[#49454F] focus:ring-0 focus:border-[#49454F]"
             type="email"
             placeholder="Email"
           />

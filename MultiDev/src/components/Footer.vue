@@ -7,7 +7,7 @@ const { useFooteInfo } = useFooter();
 
 <template>
   <div class=" border bg-black mt-32 mx-auto"></div>
-  <div class="flex flex-wrap  p-12 mx-16 py-32 gap-20 2xl:gap-40"> 
+  <div class="flex flex-wrap  p-12 md:mx-24 py-32 gap-20 2xl:gap-40"> 
     <div class="">
       <router-link to="/">
       <img src="../assets/icons/Group1.svg" alt="logo" />

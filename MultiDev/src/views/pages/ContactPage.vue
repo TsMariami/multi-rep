@@ -1,12 +1,11 @@
 <script setup>
-import mainLayout from '../../Layouts/mainLayout.vue';
+import Header from '../../components/Header.vue';
 import ContactForm from '../../components/ContactComp/ContactForm.vue'
 </script>
 
 <template>
-  <mainLayout>
     <div class="bg-[#FAFAFA]">
+      <Header />
       <ContactForm />
     </div>
-  </mainLayout>
 </template>

@@ -7,8 +7,8 @@
     <div class="flex justify-center pb-16 px-12">
         <img  src="../../assets/icons/contactlogo.svg" alt="">
     </div>
-    <div class="grid gap-3 pb-10 px-12">
-        <div class="flex justify-center gap-2">
+    <div class="grid  gap-3 pb-10 px-12">
+        <div class="flex flex-wrap justify-center gap-2">
             <img src="../../assets/icons/cal.svg" alt="">
             <img src="../../assets/icons/call.svg" alt="">
             <img src="../../assets/icons/calls.svg" alt="">
