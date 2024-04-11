@@ -1,11 +1,13 @@
-<script setup></script>
+<script setup>
+import LeftSide from '../../components/ContactComp/LeftSide.vue'
+</script>
 
 <template>
   <div
-    class="flex w-[50%] mx-auto my-16 border-[1px] border-[#000000] rounded-[20px]"
+    class="flex  md:w-[55%] mx-auto my-16 border-[1px] border-[#000000] rounded-[20px]"
   >
-    <div class="">
-      <form action="">
+    <div class="w-full">
+      <form  action="">
         <div class="flex flex-col px-4 py-4 md:py-16 md:px-16 gap-16">
           <h2 class="text-xl md:text-3xl lg:text-5xl font-medium">
             Let’s <span class="text-[#F23A3A]">discuss</span> your project
@@ -25,6 +27,7 @@
               id="message"
               class="w-[90%] md:w-[70%] md:h-[200px] block p-2.5 text-base bg-white border-[0px] border-b-[1px] border-[#49454F] focus:ring-0 focus:border-[#49454F]"
               placeholder="Message"
+              style="resize: none;"
             ></textarea>
           </div>
           <button
@@ -37,7 +40,11 @@
       </form>
     </div>
     <div
-      class="bg-[#E8E4E4] border-l-[1px] border-[#000000] rounded-r-[20px]"
-    ></div>
+      class="bg-[#E8E4E4] py-16 lg:block hidden border-l-[1px] w-[37%]  border-[#000000] rounded-r-[20px]">
+      <LeftSide />
   </div>
+  </div>
+  <div class="block lg:hidden bg-[#E8E4E4] border-[1px] border-[#000000] rounded-r-[20px] py-16" >
+  <LeftSide />
+</div>
 </template>

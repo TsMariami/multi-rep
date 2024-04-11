@@ -57,7 +57,7 @@ onMounted(() => {
             <div
               v-show="isDropdownActive"
               id="dropdownNavbar"
-              class="z-10  font-normal absolute -translate-x-[27%] translate-y-16 w-full md:w-[35%] border-t-2 bg-[white] divide-y  divide-[#D8D8D8]  shadow px-10 py-10 border-x border-b border-[#D8D8D8]"
+              class="z-10  font-normal absolute sm:w-1/3 sm:-translate-x-[35%]  2xl:-translate-x-[43%] translate-y-16  2xl:w-[53rem] border-t-2 bg-[white] divide-y  divide-[#D8D8D8]  shadow px-10 py-10 border-x border-b border-[#D8D8D8]"
             >
               <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                 <img class="pb-10" src="../assets/icons/services.svg" alt="">
