@@ -30,15 +30,15 @@ const { useFooteInfo } = useFooter();
       </div>
     </div>
     <div class="flex flex-col gap-10">
-      <h2 class="text-4xl font-medium">Get in touch</h2>
+      <h2 class="md:text-4xl text-2xl font-medium">Get in touch</h2>
       <div class="flex flex-col gap-4">
         <div class="flex gap-2">
           <img src="../assets/icons/phone.svg" alt="phone" />
-          <p class="text-2xl">(+995) 551-12-13-14</p>
+          <p class="md:text-2xl">(+995) 551-12-13-14</p>
         </div>
         <div class="flex gap-2">
           <img src="../assets/icons/letter.svg" alt="phone" />
-          <p class="text-2xl">multichiatura@gmail.com</p>
+          <p class="md:text-2xl">multichiatura@gmail.com</p>
         </div>
       </div>
       <router-link to="/contact">
