@@ -3,12 +3,13 @@ import LeftSide from '../../components/ContactComp/LeftSide.vue'
 </script>
 
 <template>
+
   <div
-    class="flex  md:w-[55%] mx-auto my-16 border-[1px] border-[#000000] rounded-[20px]"
+    class="flex justify-center mx-auto md:w-[55%]  my-16 border-[1px] border-[#000000] rounded-[20px]"
   >
     <div class="w-full">
       <form  action="">
-        <div class="flex flex-col px-4 py-4 md:py-16 md:px-16 gap-16">
+        <div class="flex flex-col px-4 py-4 md:py-16 md:px-14 gap-16">
           <h2 class="text-xl md:text-3xl lg:text-5xl font-medium">
             Let’s <span class="text-[#F23A3A]">discuss</span> your project
           </h2>
@@ -40,7 +41,7 @@ import LeftSide from '../../components/ContactComp/LeftSide.vue'
       </form>
     </div>
     <div
-      class="bg-[#E8E4E4] py-16 lg:block hidden border-l-[1px] w-[37%]  border-[#000000] rounded-r-[20px]">
+      class="bg-[#E8E4E4] py-16 lg:block hidden border-l-[1px] w-[50%]  border-[#000000] rounded-r-[20px]">
       <LeftSide />
   </div>
   </div>
