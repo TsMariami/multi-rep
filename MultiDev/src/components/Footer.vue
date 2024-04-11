@@ -43,7 +43,7 @@ const { useFooteInfo } = useFooter();
       </div>
       <router-link to="/contact">
       <button
-        class="bg-[#F23A3A] rounded-full text-white w-[60%] text-2xl font-normal py-2 px-2"
+        class="bg-[#F23A3A] rounded-full text-white md:w-[60%] text-2xl font-normal py-2 px-2"
       >
         Contact Us
       </button>
