@@ -14,26 +14,26 @@ import LeftSide from '../../components/ContactComp/LeftSide.vue'
             Let’s <span class="text-[#F23A3A]">discuss</span> your project
           </h2>
           <input
-            class="w-[90%] md:w-[70%] md:h-[56px] border-[0px] border-b-[1px] border-[#49454F] focus:ring-0 focus:border-[#49454F]"
+            class="w-[90%] xl:w-[70%] xl:h-[56px] border-[0px] border-b-[1px] border-[#49454F] focus:ring-0 focus:border-[#49454F]"
             type="email"
             placeholder="Email"
           />
           <input
-            class="w-[90%] md:w-[70%] md:h-[56px] border-[0px] border-b-[1px] border-[#49454F] focus:ring-0 focus:border-[#49454F]"
+            class="w-[90%] xl:w-[70%] xl:h-[56px] border-[0px] border-b-[1px] border-[#49454F] focus:ring-0 focus:border-[#49454F]"
             type="text"
             placeholder="Subject"
           />
           <div class="sm:col-span-2">
             <textarea
               id="message"
-              class="w-[90%] md:w-[70%] md:h-[200px] block p-2.5 text-base bg-white border-[0px] border-b-[1px] border-[#49454F] focus:ring-0 focus:border-[#49454F]"
+              class="w-[90%] xl:w-[70%] xl:h-[200px] block p-2.5 text-base bg-white border-[0px] border-b-[1px] border-[#49454F] focus:ring-0 focus:border-[#49454F]"
               placeholder="Message"
               style="resize: none;"
             ></textarea>
           </div>
           <button
             type="submit"
-            class="w-[90%] md:w-[70%] md:h-[56px] rounded-full text-lg md:text-2xl font-normal text-white bg-[#F23A3A]"
+            class="w-[90%] xl:w-[70%] xl:h-[56px] rounded-full text-lg md:text-2xl font-normal text-white bg-[#F23A3A]"
           >
             Send
           </button>

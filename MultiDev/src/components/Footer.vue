@@ -50,7 +50,7 @@ const { useFooteInfo } = useFooter();
     </router-link>
     </div>
     <div class="flex flex-col gap-10">
-      <h2 class="text-4xl font-medium">Follow Us</h2>
+      <h2 class="md:text-4xl text-2xl font-medium">Follow Us</h2>
       <div class="flex gap-9">
         <a href="#">
         <img src="../assets/icons/facebook.svg" alt="" />

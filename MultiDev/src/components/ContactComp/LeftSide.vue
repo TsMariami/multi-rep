@@ -31,7 +31,7 @@
         <a href="#"><img src="../../assets/icons/instagram.svg" alt=""></a>
         <a href="#"><img src="../../assets/icons/linked.svg" alt=""></a>
     </div>
-    <div class="pt-52 ">
+    <div class="xl:pt-52 pt-12">
         <p class="text-center tracking-wider leading-8 px-4">Explore our diverse range of products and services tailored to exceed your expectations. Let's embark on a journey together towards success.</p>
     </div>
     </div>
