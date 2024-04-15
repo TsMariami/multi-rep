@@ -18,7 +18,7 @@ onMounted(() => {
 
 <template>
   <nav class="bg-[#FFFFFF] border-b border-[#D8D8D8] py-2">
-    <div class="md:flex flex-wrap items-center justify-between mx-16 p-12">
+    <div class="md:flex flex-wrap items-center justify-between md:mx-24 p-12">
       <router-link to="/">
         <img src="../assets/icons/logo.svg" alt="" />
       </router-link>
