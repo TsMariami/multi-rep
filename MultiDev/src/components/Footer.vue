@@ -1,7 +1,5 @@
 <script setup>
 import useFooter from "../composable/useFooter";
-
-
 const { useFooteInfo } = useFooter();
 </script>
 

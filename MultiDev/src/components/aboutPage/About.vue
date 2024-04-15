@@ -1,6 +1,6 @@
 <script setup>
-import useAboutPage from "../../composable/useAboutPage.js"
-const { services } = useHomePage()
+import useAboutPage from "../../composable/useAboutUs.js"
+const { services } = useAboutPage()
 </script>
 <template>
     <div class="py-24 gap-y-44">

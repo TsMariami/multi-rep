@@ -18,7 +18,7 @@ import ContactSection from "../../components/home/ContactSection.vue"
       <div class="bg-[#CB2424] flex gap-x-24 pl-44 py-24">
         <AboutUsSection/>
       </div>
-      <div class="px-44 py-24">
+      <div class="px-44 pt-24">
         <ContactSection/>
       </div>
     </div>
