@@ -1,7 +1,9 @@
 <script setup>
 import About from '../../components/aboutPage/About.vue'
+import MainLayout from '../../Layouts/mainLayout.vue'
 </script>
 <template>
+    <MainLayout>
   <div class="flex gap-x-44 px-44 bg-black py-28">
     <div class="">
       <h2 class="text-[#6866AE] text-7xl font-medium ">About us</h2>
@@ -16,4 +18,5 @@ import About from '../../components/aboutPage/About.vue'
       team comprises seasoned professionals with diverse skill sets:</p>
   </div>
   <About />
+</MainLayout>
 </template>
